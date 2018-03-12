@@ -2,33 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>DebatikCenter </title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>DebatikCenter</title>
+
+	     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
 <style>
 		* { margin: 0; padding: 0; }
 		 html, body {height:100%; margin:0; padding:0;}
-		html { 
-			background: url('first_page.png') no-repeat; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
+		html {
+			background: url('/front-page/assets/home.jpg') no-repeat;
+			-webkit-background-size: fill;
+			-moz-background-size: fill;
+			-o-background-size: fill;
 			background-size: 100% 100%;
 		}
-		
-		/*#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
-	/*	p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; } */
+		#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+	/*p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; } */
 	</style>
 
-</body>
-</html>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	   <link rel="stylesheet" type="text/css" href="/front-page/css/style.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("header.html");
+});
+</script>
 
-    </head>
-    <body>
-        <div class="content">
-    
-
-          
     </body>
 </html>
