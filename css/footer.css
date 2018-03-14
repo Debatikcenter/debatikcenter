@@ -17,7 +17,7 @@
 }
 .homepgFooter_left {
   font-family: Consolas,monaco, monospace;
-  font-size: 10.5pt;
+  font-size: 10pt;
 
 }
 .homepgFooter_right {
@@ -28,7 +28,7 @@ text-decoration: none;
 
 .homepgFooter_right:hover a {
   color:white;
-
+text-decoration: none;
 }
   /*position: absolute;
  /*text-align: right;
