@@ -15,10 +15,17 @@
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 }
-.homepgFooter {
+.homepgFooter_left {
   position: absolute;
-  right: 0;
+  text-align: left;
   bottom: 0;
   left: 0;
+  padding: 1rem;
+}
+.homepgFooter_right {
+  position: absolute;
+ text-align: right;
+  right: 0;
+  bottom: 0;
   padding: 1rem;
 }
