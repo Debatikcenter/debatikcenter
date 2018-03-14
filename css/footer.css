@@ -1,33 +1,32 @@
 .footer {
   position: absolute;
-  right: 0;
   bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: justify;
 }
- 
-.footerContent{
+
+/*.footerContent{
 	width: 80%;
 	margin: auto;
 	padding: 5px;
 	text-align: center;
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
-}
+}*/
 .homepgFooter_left {
-  position: absolute;
-  text-align: left;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
+  font-family: Consolas,monaco, monospace;
+  font-size: 10.5pt;
+}
 }
 .homepgFooter_right {
-  position: absolute;
- text-align: right;
+  font-family: Consolas,monaco, monospace;
+font-size: 10pt;
+}
+  /*position: absolute;
+ /*text-align: right;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 1rem;*/
 }
