@@ -18,13 +18,14 @@
 .homepgFooter_left {
   font-family: Consolas,monaco, monospace;
   font-size: 10.5pt;
-}
+
 }
 .homepgFooter_right {
   font-family: Consolas,monaco, monospace;
 font-size: 10pt;
 text-decoration: none;
 }
+
 .homepgFooter_right:hover a {
   color:white;
 
