@@ -17,12 +17,12 @@
 	border-right: 1px solid #fff;*/
 }
 .homepgFooter_left {
-  font-family: Consolas,monaco, monospace;
+  font-family: Consolas;
   font-size: 10pt;
 
 }
 .homepgFooter_right {
-  font-family: Consolas,monaco, monospace;
+  font-family: Consolas;
 font-size: 10pt;
 text-decoration: none;
 }
