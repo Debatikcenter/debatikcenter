@@ -5,15 +5,20 @@ padding-top: 50px;
 #logo {
  float:left;
  padding-left: initial;
+ position: fixed;
+ z-index: 1000;
 }
 ul {
    list-style-type:none;
    margin:0;
    padding:1px;
    position: absolute;
+   /*new style 27 march */
+   position: fixed;
+   z-index: 1000;
 }
 /*Create a horizontal list with spacing*/
-li {
+li  {
    display:inline-block;
    float: left;
    margin-right: 1px;
