@@ -1,7 +1,7 @@
 .footer {
-  position: absolute;
   bottom: 0;
-  position: absolute;
+  position: fixed;
+  z-index:1000;
   width: 100%;
   text-align: justify;
 }
@@ -18,12 +18,12 @@
 }
 .homepgFooter_left {
   font-family: Consolas;
-  font-size: 10pt;
+  font-size: 8.8pt;
 
 }
 .homepgFooter_right {
   font-family: Consolas;
-font-size: 9.5pt;
+font-size: 8.5pt;
 text-decoration: none;
 }
 
