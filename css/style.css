@@ -1,3 +1,8 @@
+* {
+ padding: 0;
+ margin: 0;
+ postition:relative;
+}
 #menu {
 padding-left: 12%;
 padding-top: 50px;
@@ -7,6 +12,14 @@ padding-top: 50px;
  padding-left: initial;
  position: fixed;
  z-index: 1000;
+}
+#nav-placeholder {
+  position: relative;
+}
+.background-image {
+    background-image: none;
+    position: absolute;
+    width: 100%;
 }
 ul {
    list-style-type:none;
