@@ -27,6 +27,12 @@
                  position: fixed;
                  z-index: 1000;
                 }
+                .hidden {
+                  display:none;
+                }
+                #backgound_image:hover + .hidden, .hidden:hover{
+                  display: block;
+                }
               /*  #page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
         /*      p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; } */
         </style>
@@ -45,12 +51,13 @@ $(function(){
 </script>-->
 
 	<div id="backgound_image"><img src='https://debatikcenter.github.io/debatikcenter/assets/desertion archive.jpg' width="100%" height="auto" ></div>
+  <div class='hidden'>
   <div style="position: absolute;left: 50%;bottom: 0%;transform: translate(-50%,-0);"><a href="https://debatikcenter.github.io/debatikcenter/archive/20shkurt1990.html"><img src="https://debatikcenter.github.io/debatikcenter/assets/down_gray_icon.png" style="width:20px;"></a></div>
   <div style="position: absolute;left: 50%;top: 0%;transform: translate(-50%,-0);"><a href="https://debatikcenter.github.io/debatikcenter/archive/1989_dallga_madhe.html"><img src="https://debatikcenter.github.io/debatikcenter/assets/up_gray_icon.png" style="width:20px;"></a></div>
 
   <div style="position: absolute;right: 0%;top: 50%;transform: translate(-0,-50%);"><a href="https://debatikcenter.github.io/debatikcenter/archive/20shkurt1990.html"><img src="../assets/next_gray_icon.png" style="width: 20px;"></a></a></div>
   <div style="position: absolute;left: 0%;top: 50%;transform: translate(-0,-50%);"><a href="https://debatikcenter.github.io/debatikcenter/archive/1989_dallga_madhe.html"><img src="../assets/back_gray_icon.png" style="width: 20px;"></a></div>
+<div>
 
-    
 
 </body>
