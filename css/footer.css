@@ -7,7 +7,7 @@
 }
 
 .footerContent{
-  
+
   padding-bottom: 1%;
 	/*width: 80%;
 	margin: auto;
@@ -17,12 +17,12 @@
 	border-right: 1px solid #fff;*/
 }
 .homepgFooter_left {
-  font-family: Consolas;
+  font-family: 'Overpass Mono', monospace;
   font-size: 8.8pt;
 
 }
 .homepgFooter_right {
-  font-family: Consolas;
+  font-family: 'Overpass Mono', monospace;
 font-size: 8.5pt;
 text-decoration: none;
 }
