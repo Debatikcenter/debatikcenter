@@ -133,6 +133,9 @@ input[type=checkbox]:checked ~ #menu{
    /*Display 'show menu' link*/
    .show-menu {
        display:block;
+    float: right;
+    width: 20%;
+    margin-top: 30px;
    }
   #menu {
     padding-left: 2px;
