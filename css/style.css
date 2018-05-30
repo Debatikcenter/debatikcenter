@@ -133,6 +133,7 @@ input[type=checkbox]:checked ~ #menu{
     padding-right: 14px;
     text-align: right;
     margin-top: 30px;
+    float: right;
    }
 #logo {
   left: 50%;
