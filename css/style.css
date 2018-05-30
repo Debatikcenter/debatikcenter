@@ -94,10 +94,7 @@ ul li a:hover + .hidden, .hidden:hover {
 .show-menu {
    font-family: "Helvetica Neue", Arial, sans-serif;
    text-decoration: none;
-   color: #fff;
-   background: #000;
    text-align: center;
-   padding: 10px 0;
    display: none;
 }
 /*Hide checkbox*/
@@ -133,11 +130,22 @@ input[type=checkbox]:checked ~ #menu{
    /*Display 'show menu' link*/
    .show-menu {
        display:block;
-    float: right;
+    padding-right: 14px;
+    text-align: right;
     width: 20%;
     margin-top: 30px;
    }
-  #menu {
-    padding-left: 2px;
- }
+#logo {
+  left: 50%;
+transform: translate(-50%);
+position: absolute;
+}
+#first { padding-top: 40px;}
+
+li a{
+  padding: 10px 0px 10px 0px;
+  font-size: 14px;
+}
+img { width:100%;}
+
 }
