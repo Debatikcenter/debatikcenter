@@ -14,39 +14,51 @@ $(function(){
   $("#nav-placeholder").load("../header.html");
 });
 </script>
-	    <style type="text/css">
+<style type="text/css">
+.content {  padding-top: 100px;
+padding-left: 15%;
+padding-right: 15%;
+font-size: 11.5pt;
+text-align: justify;
+font-family: "Arial-Narrow";}
 
-		.content {  padding-top: 100px;
-      padding-left: 14%;
-      padding-right: 14%;
-      font-size: 11.5pt;
-      font-family: "Arial-Narrow";
-    text-align: justify;
-  }
-  /* footer style */
-  .footer {
-    font-family: 'Overpass Mono', monospace;
-    margin: : 0;
-    text-align: justify;
-  }
-  .footerContent {
-    padding-left: 3%;
-  padding-bottom: 1%;
-  padding-top: 2%;
-  }
-  .homepgFooter_left {
-    font-size: 8.8pt;
-  }
-  .homepgFooter_right {
-    font-size: 8.5pt;
-  }
+.text{padding-left: 13%;
+padding-right: 13%;}
+/*FOOTER STYLE */
+.footer {
+font-family: 'Overpass Mono', monospace;
+margin: : 0;
+text-align: justify;
+}
+.footerContent {
+padding-left: 3%;
+padding-bottom: 1%;
+padding-top: 2%;
+}
+.homepgFooter_left {
+font-size: 8.8pt;
+}
+.homepgFooter_right {
+font-size: 8.5pt;
+}
+.image {width:74%;
+padding-left: 13%;}
+.title{ padding-top:4px; font-size:12.5pt;}
 
-  .paragraphs {
-    padding-bottom: 10px;
-    line-height: 1.5em;
-    padding-left: 15%;
-  }
 
+@media screen and (max-width : 760px){
+.content {padding-left: 0px;
+padding-right: 0px;}
+.image {width:100%;
+padding-left: 0px;
+padding-right: 0px;}
+.text {
+padding: 6%;
+}
+.title{
+font-size: 12pt;
+padding: 0px;
+}}
 	    </style>
 
 </head>
@@ -58,19 +70,19 @@ $(function(){
   <br>
   <br>
   <br>
-  <div class="image"><img src="https://debatikcenter.net/assets/Untitled.jpg" width="74%" style="padding-left:13%"></div>
+  <div><img class="image" src="https://debatikcenter.net/assets/Untitled.jpg" ></div>
 
-<div class="text" style="padding-right:13%;">
+<div class="text">
   <a href="http://debatikcenter.net/strikes/image1.html" style="float: right;"><img src="../assets/next_gray_icon.png" style="width: 20px; margin:2px;"></a>
   <a href="http://debatikcenter.net/strikes/image2.html" style="float: right;"><img src="../assets/back_gray_icon.png" style="width: 20px; margin: 2px;"></a>
 
-<p style="padding-left:15%; padding-top:4px; font-size:12.5pt;">Pleurad Xhafa, <em>Untitled</em>, 2017</p>
+<p class="title">Pleurad Xhafa, <em>Untitled</em>, 2017</p>
 <br>
-<p class="paragraphs">In the summer of 2016, Ardit Gjoklaj was crushed to death by a heavy-duty vehicle at Tirana’s largest landfill site in Sharrë. His corpse was later found buried underneath the garbage, leading to suspicions that deliberate attempts had been made to hide the young boy’s mutilated body. The vehicle that cost Ardit Gjoklaj his life was being operated by another employee of 3R Ltd., the private company contracted by the municipality of Tirana to manage and sort through the tons of waste material deposited at the landfill site on a daily basis. Ardit Gjoklaj, however, should have never been working for 3R Ltd. in the first place. He was a minor, which means that he was employed illegally and that he was not insured either.</p>
+<p class="para" style="line-height:1.5em; padding-bottom:10px;">In the summer of 2016, Ardit Gjoklaj was crushed to death by a heavy-duty vehicle at Tirana’s largest landfill site in Sharrë. His corpse was later found buried underneath the garbage, leading to suspicions that deliberate attempts had been made to hide the young boy’s mutilated body. The vehicle that cost Ardit Gjoklaj his life was being operated by another employee of 3R Ltd., the private company contracted by the municipality of Tirana to manage and sort through the tons of waste material deposited at the landfill site on a daily basis. Ardit Gjoklaj, however, should have never been working for 3R Ltd. in the first place. He was a minor, which means that he was employed illegally and that he was not insured either.</p>
 
-<p class="paragraphs">The landfill in Sharrë is an example of what the current “socialist” government has dubbed Public-Private Partnerships (PPP). It is essentially a model employed by the government to privatize a large number of state-owned and run services. The administrator of the 3R Ltd. at the time of Ardit Gjoklaj’s death was Edurim Teqja, who also happened to be the head of the Peqin branch of the Socialist Party. Only a few weeks before Ardit Gjoklaj’s death, the Mayor of Tirana, Erion Veliaj, had personally vouched for the working conditions at the landfill in Sharrë and, with Edurim Teqja by his side, had openly called for people to work for 3R Ltd. Edurim Teqja is still wanted by the police in connection with Ardit Gjoklaj’s death.</p>
+<p class="para" style="line-height:1.5em; padding-bottom:10px;">The landfill in Sharrë is an example of what the current “socialist” government has dubbed Public-Private Partnerships (PPP). It is essentially a model employed by the government to privatize a large number of state-owned and run services. The administrator of the 3R Ltd. at the time of Ardit Gjoklaj’s death was Edurim Teqja, who also happened to be the head of the Peqin branch of the Socialist Party. Only a few weeks before Ardit Gjoklaj’s death, the Mayor of Tirana, Erion Veliaj, had personally vouched for the working conditions at the landfill in Sharrë and, with Edurim Teqja by his side, had openly called for people to work for 3R Ltd. Edurim Teqja is still wanted by the police in connection with Ardit Gjoklaj’s death.</p>
 
-<p class="paragraphs">In the winter of 2016, Erion Veliaj was photographed dining with Petrit Fusha, the public prosecutor handling the case of Ardit Gjoklaj’s death. Only a few days after this meeting, it emerged that a company owned by relatives of the public prosecutor, FUSHA Ltd., had “won” a tender worth 8.5 million USD for construction work on the new Skanderbeg Square which was being handled by the municipality of Tirana. The new square was inaugurated in the summer of 2017. A plaque with the inscription “FUSHA SHPK” marks this company’s contribution to the new square. In November 2017, Pleurad Xhafa inscribed Ardit Gjoklaj’s name on another stone tile in the new square. The intervention went unnoticed for several days. Once the authorities did take notice of it, however, the inscription was removed.</p>
+<p class="para" style="line-height:1.5em; padding-bottom:10px;">In the winter of 2016, Erion Veliaj was photographed dining with Petrit Fusha, the public prosecutor handling the case of Ardit Gjoklaj’s death. Only a few days after this meeting, it emerged that a company owned by relatives of the public prosecutor, FUSHA Ltd., had “won” a tender worth 8.5 million USD for construction work on the new Skanderbeg Square which was being handled by the municipality of Tirana. The new square was inaugurated in the summer of 2017. A plaque with the inscription “FUSHA SHPK” marks this company’s contribution to the new square. In November 2017, Pleurad Xhafa inscribed Ardit Gjoklaj’s name on another stone tile in the new square. The intervention went unnoticed for several days. Once the authorities did take notice of it, however, the inscription was removed.</p>
 
 </div>
 </div>
