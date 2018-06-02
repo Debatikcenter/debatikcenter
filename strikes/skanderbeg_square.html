@@ -44,7 +44,6 @@ padding-top: 2%;
 .homepgFooter_right {
   font-size: 8.5pt;
 }
-
     /* STRUCTURE FOR THREE COLUMN LAYOUT*/
 
     .wrapper {
@@ -73,7 +72,16 @@ padding-top: 2%;
     footer {
     	padding: 0 15px;
     }
-
+    .column2 {
+      padding-left:2%;
+      padding-right:2%
+    }
+    .paragraphs {
+      padding-bottom: 10px;
+      line-height: 1.5em;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
 /* responsive design for three column layout */
     @media screen and (max-width: 980px) {
       .columns .column {
@@ -94,12 +102,23 @@ padding-top: 2%;
     		flex-basis: 100%;
     		margin: 0 0 5px 0;
     	}
+      .content {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .column2{
+        padding-left: 0px;
+        padding-right: 0px;
+
     }
 
     .paragraphs {
       padding-bottom: 10px;
       line-height: 1.5em;
+      padding-left: 4%;
+      padding-right: 4%;
     }
+}
 	    </style>
 
 </head>
@@ -121,7 +140,7 @@ padding-top: 2%;
       </a></p>
     </div>
 
-  	<div class="column" style="padding-left:2%; padding-right:2%;">
+  	<div class="column column2" >
   		<p><a href="../strikes/image2.html"><img src="https://debatikcenter.github.io/debatikcenter/assets/Naming the Halter.jpg" alt="image2" width="100%">
       </a></p>
     </div>

@@ -15,31 +15,59 @@ $(function(){
 });
 </script>
 	    <style type="text/css">
-		.content {    padding-top: 100px;
-font-family: 'Arial-Narrow';
-font-size: 12.5pt;
-padding-left: 14%;
-padding-right: 14%;
-text-align: justify;}
+      .content {    padding-top: 100px;
+  padding-left: 14%;
+  padding-right: 14%;
+  font-family: 'Arial-Narrow';
+  font-size: 12.5pt;
+  text-align: justify;}
+  /* footer style */
+  .footer {
+    font-family: 'Overpass Mono', monospace;
+    margin: : 0;
+    text-align: justify;
+  }
+  .footerContent {
+    padding-left: 3%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  }
+  .homepgFooter_left {
+    font-size: 8.8pt;
+  }
+  .homepgFooter_right {
+    font-size: 8.5pt;
+  }
+  .iframe {width:100%;
+     height: 420px;
+   }
+   .image {
+     padding-left: 13%;
+     padding-right: 13%;
+   }
+  .title{ padding-top:4px; font-size:12.5pt;}
+  .text{padding-left: 13%;
+  padding-right: 13%;}
 
-/* footer style */
-.footer {
-  font-family: 'Overpass Mono', monospace;
-  margin: : 0;
-  text-align: justify;
-}
-.footerContent {
-  padding-left: 3%;
-padding-bottom: 1%;
-padding-top: 2%;
-}
-.homepgFooter_left {
-  font-size: 8.8pt;
-}
-.homepgFooter_right {
-  font-size: 8.5pt;
-}
-	    </style>
+  @media screen and (max-width : 760px){
+    .content {padding-left: 0px;
+    padding-right: 0px;}
+    .image {
+    padding-left: 0px;
+    padding-right: 0px;}
+
+    .iframe {
+      width: 100%;
+      height: 180px;
+    }
+    .text{
+      padding: 6%;
+    }
+    .title{
+    font-size: 12pt;
+    padding: 0px;
+    }
+  }   </style>
 <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 </head>
 <body>
@@ -50,9 +78,9 @@ padding-top: 2%;
   <br>
   <br>
   <br>
-  <div style="padding-left:13%; padding-right:13%;"><iframe width="100%" height="420" src="https://www.youtube.com/embed/albmMDbzmB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+  <div class="image"><iframe class="iframe" width="100%" height="420" src="https://www.youtube.com/embed/albmMDbzmB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
 <div class="text">
-<p style="padding-left:13%; padding-top:4px;">Armando Lulaj, <em>Breaking Stones</em>, 2017</p>
+<p class="title">Armando Lulaj, <em>Breaking Stones</em>, 2017</p>
 
 </div>
 </div>
