@@ -16,6 +16,9 @@ padding-top: 50px;
 #nav-placeholder {
   position: relative;
 }
+#backgound_image {
+  padding-top: 0px;
+}
 .background-image {
     background-image: none;
     position: absolute;
@@ -135,6 +138,9 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 30px;
     float: right;
    }
+#backgound_image {
+  padding-top: 100px;
+}
 #logo {
   left: 50%;
 transform: translate(-50%);
