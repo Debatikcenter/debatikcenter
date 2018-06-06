@@ -139,7 +139,7 @@ input[type=checkbox]:checked ~ #menu{
     float: right;
    }
 #backgound_image {
-  padding-top: 100px;
+  padding-top: 50%;
 }
 #logo {
   left: 50%;
