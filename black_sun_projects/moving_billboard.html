@@ -8,13 +8,66 @@
 
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	       <style type="text/css">
-		.content {   position: absolute;
+		.content {
+      padding-top: 200px;
+ padding-left: 13%;
+ padding-right: 13%;
+ font-family: "Arial-Narrow";
+ font-size: 11.5pt;
+ text-align: justify;}/* position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
 font-family: 'Helvetica', Arial, serif;
 font-size: 12pt;
 			}
+      /*  SECTIONS  */
+      .section {
+      	clear: both;
+      	padding: 0px;
+      	margin: 0px;
+      }
+
+      /*  COLUMN SETUP  */
+      .col {
+      	display: block;
+      	float:left;
+      	margin: 1% 0 3% 3%;
+        background-color: black;
+        color: white;
+        height: 205px;
+        line-height: 205px;
+        text-align: center;
+font-weight: bold;
+      }
+      .col:first-child { margin-left: 0; }
+
+      /*  GROUPING  */
+      .group:before,
+      .group:after { content:""; display:table; }
+      .group:after { clear:both;}
+      .group { zoom:1; /* For IE 6/7 */ }
+
+      /*  GRID OF FOUR  */
+      .span_4_of_4 {
+      	width: 100%;
+      }
+      .span_3_of_4 {
+      	width: 74.25%;
+      }
+      .span_2_of_4 {
+      	width: 48.5%;
+      }
+      .span_1_of_4 {
+      	width: 22.75%;
+      }
+
+      /*  GO FULL WIDTH BELOW 480 PIXELS */
+      @media only screen and (max-width: 480px) {
+      	.col {  margin: 1% 0 3% 3%; }
+      	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+      }
+
 	    </style>
       <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 	   <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -30,10 +83,101 @@ $(function(){
 });
 	</script>
 
-<div class="content"><p>(... coming soon)</p></div>
+<div class="content">
 
 	<br>
 	<br>
+  <div class="section group">
+	<div class="col span_1_of_4">
+	1am
+	</div>
+	<div class="col span_1_of_4">
+	2am
+	</div>
+	<div class="col span_1_of_4">
+	3am
+	</div>
+	<div class="col span_1_of_4">
+	4am
+	</div>
+
+</div>
+<div class="section group">
+<div class="col span_1_of_4">
+5am
+</div>
+<div class="col span_1_of_4">
+6am
+</div>
+<div class="col span_1_of_4">
+7am
+</div>
+<div class="col span_1_of_4">
+8am
+</div>
+
+</div>
+<div class="section group">
+<div class="col span_1_of_4">
+9am
+</div>
+<div class="col span_1_of_4">
+10am
+</div>
+<div class="col span_1_of_4">
+11am
+</div>
+<div class="col span_1_of_4">
+12am
+</div>
+
+</div>
+<div class="section group">
+<div class="col span_1_of_4">
+1pm
+</div>
+<div class="col span_1_of_4">
+2pm
+</div>
+<div class="col span_1_of_4">
+3pm
+</div>
+<div class="col span_1_of_4">
+4pm
+</div>
+
+</div>
+<div class="section group">
+<div class="col span_1_of_4">
+5pm
+</div>
+<div class="col span_1_of_4">
+6pm
+</div>
+<div class="col span_1_of_4">
+7pm
+</div>
+<div class="col span_1_of_4">
+8pm
+</div>
+
+</div>
+<div class="section group">
+<div class="col span_1_of_4">
+9pm
+</div>
+<div class="col span_1_of_4">
+10pm
+</div>
+<div class="col span_1_of_4">
+11pm
+</div>
+<div class="col span_1_of_4">
+12pm
+</div>
+
+</div>
+</div>
 <!--
 	<div class="footer">
   <div class="footerContent" style="padding-left:3%;">
