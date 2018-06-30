@@ -88,7 +88,8 @@ input[type=checkbox]{
 }
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
-   display: relative;
+   display: none;
+   position: relative;
 }
 input[type=checkbox]:not(:checked) ~ #menu{
   position: inherit;
