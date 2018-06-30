@@ -3,7 +3,6 @@
  margin: 0;
  postition:relative;
 }
-
 #nav-placeholder {
   position: relative;
 }
@@ -97,7 +96,11 @@ input[type=checkbox]:checked ~ #menu{
  left: 0;
  display: none;
 }	*/
-
+@media screen and (max-width : 760px){
+#nav-placeholder{
+  display: none;
+}
+}
 /*Responsive Styles*/
 @media screen and (max-width : 760px){
    /*Make dropdown links appear inline*/
