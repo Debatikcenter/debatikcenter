@@ -96,7 +96,7 @@ input[type=checkbox]:checked ~ #menu{
  left: 0;
  display: none;
 }	*/
-@media screen and (max-width : 761px){
+@media screen and (min-width : 761px){
 #nav-placeholder{
   display: none;
 }
