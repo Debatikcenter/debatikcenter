@@ -3,10 +3,7 @@
  margin: 0;
  postition:relative;
 }
-#menu {
-padding-left: 12%;
-padding-top: 50px;
-}
+
 #nav-placeholder {
   position: relative;
 }
@@ -124,14 +121,6 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 30px;
     float: right;
    }
-#backgound_image {
-  padding-top: 50%;
-}
-#logo {
-  left: 50%;
-transform: translate(-50%);
-position: absolute;
-}
 #first { padding-top: 40px;}
  #menu {padding-left: 0px;
  padding-top:70px;}
