@@ -141,10 +141,13 @@ input[type=checkbox]:checked ~ #menu{
 #backgound_image {
   padding-top: 50%;
 }
-#logo, #logo1 {
+#logo1{
   left: 50%;
 transform: translate(-50%);
 position: absolute;
+}
+#logo{
+  display: none;
 }
 #first { padding-top: 40px;}
  #menu {padding-left: 0px;
