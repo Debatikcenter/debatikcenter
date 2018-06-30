@@ -115,12 +115,12 @@ input[type=checkbox]:not(:checked) ~ #menu{
        width: 100%;
    }
    /*Display 'show menu' link*/
-   .show-menu1 {
+   .show-menu1, .show-menu {
        display:block;
     padding-right: 14px;
     text-align: right;
     margin-top: 30px;
-    float: right;
+  /*  float: right; this made my checkbox not function properly */
    }
 #first { padding-top: 40px;}
  #menu {padding-left: 0px;
