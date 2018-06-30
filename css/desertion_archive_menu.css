@@ -90,6 +90,11 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
    display: block;
 }
+input[type=checkbox]:checked ~ #backgound_image{
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%)
+}
 /* new code for resonsive menu*/
 /*label {
  position: absolute;
