@@ -7,7 +7,7 @@
 padding-left: 12%;
 padding-top: 50px;
 }
-#logo {
+#logo, #logo1 {
  float:left;
  padding-left: initial;
  position: fixed;
@@ -141,7 +141,7 @@ input[type=checkbox]:checked ~ #menu{
 #backgound_image {
   padding-top: 50%;
 }
-#logo {
+#logo, #logo1 {
   left: 50%;
 transform: translate(-50%);
 position: absolute;
