@@ -88,12 +88,10 @@ input[type=checkbox]{
 }
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
-   display: block;
+   display: relative;
 }
-input[type=checkbox]:checked ~ #backgound_image{
-  left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%)
+input[type=checkbox]:not(:checked) ~ #menu{
+  position: inherit;
 }
 /* new code for resonsive menu*/
 /*label {
