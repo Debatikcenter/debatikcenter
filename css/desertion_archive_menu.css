@@ -93,7 +93,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 input[type=checkbox]:not(:checked) ~ #menu{
   position: inherit;
-  display: block;
+  display: none;
 }
 /* new code for resonsive menu*/
 /*label {
