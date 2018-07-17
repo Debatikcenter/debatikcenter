@@ -1,0 +1,39 @@
+/*there goes the css code for archive category */
+
+* { margin: 0; padding: 0; }
+ html, body {height:100%;
+   margin:0;
+   padding:0;
+   background-color: black;}
+
+#backgound_image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+ float:left;
+ padding-left: initial;
+ position: fixed;
+ z-index: 1000;
+}
+.hidden {
+  display:none;
+}
+#backgound_image:hover + .hidden, .hidden:hover{
+  display: contents;
+}
+@media screen and (max-width: 767px) {
+#logo{
+  display: none;
+}
+.mobmenu{
+  color: #fff;
+}
+
+}
+@media screen and (min-width: 760px) {
+  .mn{display: none;}
+}
