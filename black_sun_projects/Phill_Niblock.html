@@ -40,19 +40,47 @@ padding-right: 3%;
 font-family: "Arial-Narrow";
 font-size: 10pt;
 text-align: justify;
-display: table;
+/*display: table;*/
 padding-bottom: 50px;}
 #left{
   width: 65%;
-
   padding-right:10px;
 }
 #right{
-  position: relative;
-  padding-top: 38%;
+  position: absolute;
+  bottom: 0;
   padding-right: 20px;
+  line-height: unset;
+padding-bottom: 35px;
 }
-</style>
+table{
+  padding-top:30px;
+  padding-left:8px;
+  position: absolute;
+    padding-bottom: 30px;
+    width:80%;
+}
+@media screen and (max-width : 760px){
+  td{
+    display: block;
+  }
+  table{
+    padding-left: 0px;
+  }
+    .content {
+    padding-left: 0px;
+        padding-right: 0px; }
+    #left {
+        padding-right: 0px;
+        padding-bottom: 25px;
+        width: 100%;}
+    #right{
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top:0px;
+  position: relative;}
+   }
+   </style>
 
 </head>
 
@@ -60,16 +88,16 @@ padding-bottom: 50px;}
 <body>
   <div id="nav-placeholder"></div>
 
-<div class="content">
-<br>
-<br>
-<br>
-<table style="padding-top:30px; padding-bottom:30px; padding-left:8px;">
-<tr>
-<td width="75%" id="left"><img class="image" src="../assets/Phill_Niblockx800.jpg" width="100%"/>
-</td>
-<td width="auto" id="right">Photographic documentation of the appearance of Phill Niblock's <em>Fishermen Brasil</em>, 1983, on a billboard on Rruga 940, Plepa, Durrës – Albania, between 1 AM – 2 AM.</td>
-</table>
+  <div class="content">
+  <br>
+  <br>
+  <br>
+  <table>
+  <tr>
+  <td width="75%" id="left"><img class="image" src="../assets/Phill Niblock.jpg" width="100%"/>
+  </td>
+  <td width="auto" id="right">Photographic documentation of the appearance of Phill Niblock's <em>Fishermen Brasil</em>, 1983, on a billboard on Rruga 940, Plepa, Durrës – Albania, between 1 AM – 2 AM.</td>
+  </table>
 </div>
 
 
