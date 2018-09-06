@@ -49,7 +49,7 @@ li a {
    height: 10px;
    text-align: center;
    line-height: 10px;
-   font-family: "Helvetica", Arial, serif;
+  /* font-family: "Helvetica", Arial, serif;*/
    color: #000;
    background: #fff;
    text-decoration: none;
@@ -95,7 +95,7 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-   font-family: "Helvetica Neue", Arial, sans-serif;
+   /*font-family: "Helvetica Neue", Arial, sans-serif;*/
    text-decoration: none;
    text-align: center;
    display: none;
