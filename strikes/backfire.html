@@ -9,13 +9,13 @@
 note: keywords doesn't improve much SEO for websites -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="DebatikCenter of Contemporary Art is a nexus of academics, activists, architects, artists, imaginary and real collectives, critics, curators, journalists, translators, etc. that seek to shine a light on these practices but also offer the necessary tools to imagine alternative futures and strategies of resistance to the status quo." />
-<meta name="keywords" content="Gughengaumeeeeee, Armando Lulaj" />
+<meta name="keywords" content="Ergin Zaloshnja, Backfire" />
 <!--social meta tags below -->
 <meta property="og:description" content="DebatikCenter of Contemporary Art is a nexus of academics, activists, architects, artists, imaginary and real collectives, critics, curators, journalists, translators, etc. that seek to shine a light on these practices but also offer the necessary tools to imagine alternative futures and strategies of resistance to the status quo.">
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="DebatikCenter of Contemporary Art"/>
-<meta property="og:url" content="https://debatikcenter.net/strikes/gughengaumeeeee"/>
-<meta property="og:image" content="https://debatikcenter.net/assets/img_strikes/gughengaumeeeeee.jpg" />
+<meta property="og:url" content="https://debatikcenter.net/strikes/blackfire"/>
+<meta property="og:image" content="https://debatikcenter.net/assets/img_strikes/" />
 <meta property="og:site_name" content="DebatikCenter"/>
 <meta property="fb:app_id" content="966242223397117"/>
 <!-- style used -->
@@ -34,34 +34,43 @@ $("#nav-placeholder").load("../header.html");
 .content {  padding-top: 100px;
 padding-left: 15%;
 padding-right: 15%;
-padding-bottom: 25px;
 font-size: 11.5pt;
 text-align: justify;
 font-family: "Arial-Narrow";}
 
 .text{padding-left: 13%;
 padding-right: 13%;}
-/*FOOTER STYLE */
-.footer {
-font-family: 'Overpass Mono', monospace;
-margin: : 0;
-text-align: justify;
-}
-.footerContent {
-padding-left: 3%;
-padding-bottom: 1%;
-padding-top: 2%;
-}
-.homepgFooter_left {
-font-size: 8.8pt;
-}
-.homepgFooter_right {
-font-size: 8.5pt;
-}
-.image {width:74%;
-padding-left: 13%;}
+
 .title{ padding-top:4px; font-size:12.5pt;}
 
+
+    .wrapper {
+    	/*padding: 5px;
+    	max-width: 960px;*/
+    	width: 74%;
+      padding-left: 13%;
+    }
+
+    .columns {
+    	display: flex;
+    	flex-flow: row wrap;
+    	justify-content: center;
+    /*	margin: 5px 0;*/
+    }
+
+    .column {
+    	flex: 1;
+    	/*border: 1px solid gray;
+    	margin: 2px;
+    	padding: 10px;*/
+    	&:first-child { margin-left: 0; }
+    	&:last-child { margin-right: 0; }
+
+    }
+    img{
+      width:94%;
+
+    }
 
 @media screen and (max-width : 760px){
 .content {padding-left: 0px;
@@ -74,8 +83,33 @@ padding: 6%;
 }
 .title{
 font-size: 12pt;
-padding-bottom: 20px;
+padding: 0px;
 }}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+  .content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .column2{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.paragraphs {
+  padding-bottom: 10px;
+  line-height: 1.5em;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.row2 {
+  padding-top: 0px;
+  }
+}
 
   </style>
 
@@ -87,12 +121,42 @@ padding-bottom: 20px;
   <br>
   <br>
   <br>
-  <div><img class="image" src="../assets/img_strikes/gughengaumeeeeee.jpg" alt="Armando Lulaj, ughengaumeeeeee" width="760px;"></div>
 
-<div class="text">
-  <p class="title" >Armando Lulaj, <em>Guggenheimeeeeeeeeee</em>, 2001-2018</p>
-    <br>
-<p class="para" style="line-height:1.5em; padding-bottom:10px;">"A considerable number of Albanian immigrants, but not only, are lingering in Bilbao trying to board a ship bound for the United Kingdom. I was told that a young Albanian immigrant, who is also an artist, was planing to do something meaningful. Aware of our government's relationship to art he was thinking of throwing a rope at the Guggenheim Museum so as to climb it, much in the same way as his immigrants predecessors did with the ships heading to Italy back in the 90s. In my view this symmetry makes perfect sense. (A.L)".</p>
+  <div class="wrapper" style="padding-bottom:2%;">
+
+  <section class="columns">
+
+  	<div class="column">
+  		<p><img class="image" src="../assets/img_strikes/BACKFIRE_4.jpg" alt=""></p>
+    </div>
+
+    <div class="column">
+  		<p><img class="image" src="../assets/img_strikes/BACKFIRE_3.jpg" alt=""></p>
+    </div>
+
+  </section>
+</div>
+
+<div class="wrapper">
+
+<section class="columns">
+
+  <div class="column">
+    <p><img class="image" src="../assets/img_strikes/BACKFIRE_1.jpg" alt=""></p>
+  </div>
+
+  <div class="column">
+    <p><img class="image" src="../assets/img_strikes/BACKFIRE_2.jpg" alt=""></p>
+  </div>
+
+</div>
+
+
+  <div class="text">
+
+ <p class="title">Ergin Zaloshnja, <em>Backfire</em>, 2019</p>
+  <br>
+
 </div>
 </body>
 </html>
