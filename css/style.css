@@ -108,6 +108,14 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
    display: block;
 }
+.ul-2 {
+
+    position: relative;
+    left: 100%;
+    top: -20px;
+    margin-top: -1px;
+
+}
 /* new code for resonsive menu*/
 /*label {
  position: absolute;
