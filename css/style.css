@@ -146,6 +146,14 @@ input[type=checkbox]:checked ~ #menu{
     margin-top: 30px;
     float: right;
    }
+   .ul-2 {
+
+       position: initial;
+       left: inherit;
+       top: inherit;
+       margin-top: 5px;
+
+   }
 #backgound_image {
   padding-top: 50%;
 }
