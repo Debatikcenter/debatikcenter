@@ -112,7 +112,7 @@ input[type=checkbox]:checked ~ #menu{
 
     position: relative;
     left: 100%;
-    top: -20px;
+    top: -21px;
     margin-top: -1px;
 
 }
