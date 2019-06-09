@@ -1,50 +1,509 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>DebatikCenter</title>
+<!-- Important SEO tags.
+note: keywords doesn't improve much SEO for websites -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DebatikCenter of Contemporary Art is a nexus of academics, activists, architects, artists, imaginary and real collectives, critics, curators, journalists, translators, etc. that seek to shine a light on these practices but also offer the necessary tools to imagine alternative futures and strategies of resistance to the status quo." />
+<meta name="keywords" content="DebatikCenter, Tirana, Contemporary Art"/>
+<!--social meta tags below -->
+<meta property="og:description" content="DebatikCenter of Contemporary Art is a nexus of academics, activists, architects, artists, imaginary and real collectives, critics, curators, journalists, translators, etc. that seek to shine a light on these practices but also offer the necessary tools to imagine alternative futures and strategies of resistance to the status quo.">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="DebatikCenter of Contemporary Art"/>
+<meta property="og:url" content="https://debatikcenter.net/black_sun_projects/memories"/>
+<meta property="og:image" content="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/1.jpg" />
+<meta property="og:site_name" content="DebatikCenter"/>
+<meta property="fb:app_id" content="966242223397118"/>
+<!-- style used -->
 <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/footer.css">
-<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<!-- embedded style-->
+        <style>
+		* { margin: 0; padding: 0; }
+		 html, body {height:100%; margin:0; padding:0;}
 
-	       <style type="text/css">
-		.content {     position: absolute;
+     img {
+       margin-top: -10px;
+       margin-bottom: -10px;
+       padding-top: 0px;
+     }
+     .section_3, .section_4, .section_5, .section_7{
+       text-align: justify;
+       line-height: 1.5;
+     }
+     .section_4{
+       padding-top: 180px;
+     }
+     .section_5{
+       padding-top: 180px;
+     }
+     # backgound_image {padding-top: 0px;}
+    #logo {margin-top: 10px;
+    }
+    @media screen and (max-width : 767px){
+   #backgound_image{padding-top: 0%;}
+   .section2{
+     height: 350px
+   }
+    }
+    .section_2{
+      padding-top: 10%;
+      padding-left: 23%;
+      width: 54%;
+    }
+    .section2{
+      height: 750px
+    }
+    .title-image{
+    text-align: center;
+    color:#333;
+    font-size:20px;
+    padding-top:40px;
+    }
+    .author{
+      text-align: center;
+      color:#333;
+    }
+    .section_7{
+      padding-top: 125px;
+    }
+    @media screen and (min-width: 1400px)
+    {
+#backgound_image4, #backgound_image5, #backgound_image7, .parallax{
+      height:900px !important;}
+      .section_3 {
+        padding-top: 140px !important;
+      }
+      .section_4, .section_5{
+        padding-top:240px !important;
+      }
+      .section_7{
+        padding-top: 200px;
+      }
+      .video_section{
+        min-height: 650px !important;
+
+      }
+
+    }
+    #backgound_image4{
+      background-image: url("https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/4.jpg");
+      height:760px;
+      min-height: 300px;
+    }
+    #backgound_image5{
+      background-image: url("https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/5.jpg");
+      height:760px;
+      min-height: 300px;
+    }
+    #backgound_image7{
+      background-image: url("https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/7.jpg");
+      height:760px;
+      min-height: 300px;
+    }
+    section{
+      background-color: #f3f3f3;
+    }
+.section3{
+  height: 450px;
+}
+    .text, .section_3{
       left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-font-family: 'Helvetica', Arial, serif;
-font-size: 12pt;
-			}
+      transform: translate(-50%);
+      position: absolute;
+    /*  padding-top: 20px;*/
+      color:white;
+    }
 
-	    </style>
+		/*#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+	/*	p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; } */
 
-      <script src="../js/jquery-1.10.2.js"></script>
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 54%;
+    position: relative;
+    margin: auto;
+    padding-top: 120px;
+
+
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.video_section{
+  min-height: 500px;
+
+}
+  /* Caption text */
+  .text{
+    color:#f2f2f2;
+  }
+  .section_3{
+    color:#333;
+  }
+  .text , .section_3{
+    font-size: 15px;
+  /*  padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;*/
+    width: 54%;
+    text-align: center;
+    text-align: justify;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.video-last
+  {
+    width:54%;
+    left: 50%;
+transform: translate(-50%);
+position: absolute;
+max-height: 280px;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .parallax1 {
+  /* The image used */
+  background-image: url("https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/6.jpg");}
+.parallax {
+  /* Set a specific height */
+  min-height: 760px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+/* The image used */
+background-image: url("https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/3.jpg");
+
+}
+.img_description{
+  padding-top: 30px;
+}
+
+/* mobile responsive code */
+@media screen and (max-width : 767px){
+  .section_2{
+    padding-left: 8%;
+    width: 84%;
+  }
+  .title-image{
+  font-size:18px;
+  }
+.text, .section_3, .section_4, .section_5, .section_7{
+  width: 84%;
+  font-size: 11.5pt;
+}
+.section2{
+  height: 400px;
+}
+.section3{
+  height: 800px;
+}
+#backgound_image4, #backgound_image5{
+  height: 1200px;
+}
+.section_4, .section_5, .section_3{
+  padding-top: 100px;
+}
+#backgound_image7{
+  height: 1400px
+}
+.section_7{
+  padding-top: 90px;
+}
+.slideshow-container{
+  max-width: 74%;
+}
+.parallax{
+  min-height: 500px;
+}
+.video_section{
+  max-height: 450px;
+}
+.video_last{
+  width: 80%;
+}
+iframe{
+  height:200px;
+}
+
+}
+iframe{
+  height:400px;
+}
+	</style>
+
+ <script src="../js/jquery-1.10.2.js"></script>
+
 </head>
-<body style="background-color: #fff;">
-      <div id="nav-placeholder"></div>
+<body>
+     <div id="nav-placeholder" ></div>
 <!--HEADER-->
 <script>
 $(function(){
   $("#nav-placeholder").load("../header.html");
 });
-	</script>
+</script>
+<section>
+<div id="backgound_image"><img src='https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/1.jpg' width="100%" height="auto" ></img> </div></section>
+<section class="section2">
+<div class="section_2"><img src='https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/2.jpg' width="100%" height="auto">
+  </div>
+  <div class="img_description clearfix"></div>
+<p class="title-image">The Last Ideological Revolution</p>
+&nbsp;
+<p class="text author" style="text-align: center;color: #333;">Maryam Ashrafi & Barbad Golshiri</p>
+</section>
+<section class="section3">
+<p class="section_3">The Last Ideological Revolution is a site-specific installation centred on a composite
+photograph of Maryam Rajavi, the leader of the Mujahedeen-e-Khalq (MEK). The
+image is a manipulated collage made from two photographs of Rajavi taken by
+Ashrafi in 2010. The installation site, the ruins of Radio Tirana’s 50 kW medium-
+wave transmitter in Kashar inaugurated in 1952 at the height of the communist regime
+in Albania, was chosen to reflect on the context in which the photograph of Rajavi
+was taken, and on the radio as one of the earliest mediums of mass communication
+and propaganda tools. Staunchly opposed to injustices committed in Iran, with
+Ashrafi living in exile in Paris, France, the artists are also critical of the MEK, and of
+Western countries such as the United States that not too long ago classified the MEK
+as a terrorist group but now portray this mysterious cult-like organization as Iran’s
+legitimate opposition, even though the organization has no support from Iranian
+activists inside Iran.</p>
+</section>
+<section>
+  <div class="parallax parallax2"></div>
 
-<div class="content"><p><img width="100%" src="../assets/text_english.jpg"></p>
-<p><img width="100%" src="../assets/text.jpg"></p>
-<p><img width="100%" src="../assets/text_shqip.jpg"></p></div>
+<section>
+  <div class="parallax"  id="backgound_image4"><p class="text section_4">The MEK’s first ideological revolution started when Mehdi Abrishamchi, Massoud
+Rajavi’s right-hand man, divorced Maryam Qajar-Azodanlu so she could marry
+Rajavi. The marriage, which took place in 1985, was described as the ideological
+union of Massoud and Maryam and a key point in the greater 'Ideological Revolution'.
+<br />
+<br />
+The MEK’s great defeat during 1988’s Operation Eternal Light, in which the
+organisation lost more than a seventh of its army, marks a second turning point. Faced
+with rising dissent among the MEK’s rank and file as a result of their refusal to take
+responsibility for the defeat, the Rajavis responded by shifting the blame onto the
+“liberation army”, their ‘lack of sacrifice’ and low ‘ideological purity’ and ‘capacity
+for struggle’, and calling for the need for more constant ‘ideological revolutions’. The
+leadership asked all of its members to renounce all earthly attachments, including
+sexual and emotional ties to spouses and children. The process included constant self-
+criticism or perpetual cleansing (what Rajavi called ‘weekly ablutions’) and the
+dissolution of all marriages except that of the Rajavis. The members later realised that
+the leadership had not asked merely for legal separations, but rather wanted all
+members to sever their ties to their spouses and children and all earthly attachments in
+their very hearts. To gain absolute mental and physical dedication to the leadership,
+the members needed to hate their loved ones, for those earthly loves were barriers
+between them and the leadership chosen by God.</p></div></section>
+</section>
+<section>
+  <div class="parallax"  id="backgound_image5"><p  class="text section_5">Ever since, MEK members have been routinely subjected to all manner of
+psychological and physical abuses so as to fully detach themselves from all earthly
+ties in order to be united with their leader, namely Maryam, who they refer to as
+‘Maryam the ever-shining sun (Mehr)’. As for Massoud Rajavi, he has not been seen
+in public since the U.S. led invasion of Iraq in 2003, though various audio recordings
+attributed to him have been broadcast by the organization. The 2003 invasion of Iraq
+transformed the MEK’s circumstances and ‘fate’ in more ways than one. Soon after,
+in June 2004, the U.S. designated the members of the MEK as ‘protected persons’
+under the Fourth Geneva Convention, Relative to the Protection of Civilian Persons in
+Time of War, a status they lost in 2009 when full sovereignty was restored to Iraq.
+However, in 2012 the U.S. removed the MEK from the State Department’s list of
+foreign terrorist organisations. The Persian word ‘Mehr’ equally connotes ‘sun’, ‘compassion’, and ‘love’. The archaic understanding of ‘Mehr’ signifies eternity and
+perpetuity. The photo shows Maryam carrying a coffin on which an image is sealed.
+The sealed image shows Maryam gazing at another image yet again. In Massoud’s
+perpetual absence, Maryam is the eternal sun. If a creature is perpetual, that creature’s
+day shall not give way to tomorrow; the creature shall not age. In the photo, Maryam
+looks older than today, although the photo was taken nine years ago. The mise-en-
+abîme investigates the politics behind Maryam’s image: recurrence, everlasting, ever
+shining, undying.</p>
+</section>
+<section>
+  <div class="parallax parallax1"></div></section>
+  <!--
+<div id="backgound_image"><img src='https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/6.jpg' width="100%" height="auto" ></img> </div></section>
+-->
+<section>
+  <div class="parallax" id="backgound_image7"><p class="text section_7">
+    The first 210 Mujahedeen arrived in Albania in 2013, towards the end of Sali
+Berisha’s second term as Prime Minister. Another 3000 Mujahedeen relocated from
+Camp Ashraf in Iraq to Albania in 2016, following an obscure deal between Prime
+Minister Edi Rama and US Secretary of State John Kerry. The Mujahedeen have
+since settled in a purpose-built camp in Manzë, around 20 km from the capital Tirana.
+The camp is virtually inaccessible to outsiders, and the group are extremely guarded
+in their interactions with anyone who is not a member. Interestingly, the Albanian
+mainstream media have shown a remarkable lack of interest in the presence of the
+Mujahedeen in Manzë, essentially refusing to investigate or report on the group’s
+activities and history, including the purpose and duration of their stay in the country.
+On the other hand, various incidents have taken place between the Mujahedeen and
+foreign members of the press who have tried to gain access to the camp, including
+Channel 4’s Lindsey Hilsum who was swiftly branded an agent of the Iranian
+regime’s intelligence service by the MEK. There have also been a number of
+defections among the members of the MEK in Albania, and in December 2018 the
+Albanian government expelled two Iranian diplomats as well as the Iranian
+Ambassador in Tirana.
+<br />
+<br />
+The Last Ideological Revolution raises key questions about democracy in today’s
+global context, in particular the murky business of exporting and installing democracy
+in countries run by authoritarian regimes by countries with supposedly democratic
+governments, and the role of peripheral developing nations like Albania, that
+themselves are often described as ‘hybrid’ democracies.
+<br />
+<br />
+The artists wish to dedicate The Last Ideological Revolution to all victims of the
+MEK, deceased and living.
+  </p>
+</section>
+<section class="parallax" style="padding-bottom:30px; background-color:#f3f3f3;">
 
-	<br>
-	<br>
-<!--
-	<div class="footer">
-  <div class="footerContent" style="padding-left:3%;">
-		<p class="homepgFooter_left">&copy; DCCA. ALL RIGHTS RESERVED</p>
-		<p class="homepgFooter_right" ><a href="mailto:info.debatikcenter@gmail.com" style="text-decoration:none; color:black">info.debatikcenter@gmail.com</a></p>
-  </div>-->
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/10.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <!--  <div class="numbertext">4 / 5</div>-->
+    <img src="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/11.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <!--  <div class="numbertext">3 / 3</div>-->
+    <img src="https://sidorelauku.github.io/debatikcenter/assets/ideological_revolution/12.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+&nbsp;
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</section>
+<section class="video_section" style="background-color:#f3f3f3;">
+<div class="video-last">
+<iframe class="iframe" src="https://www.youtube.com/embed/-ECkV6rECMs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="100%" height="420"></iframe>
+</div>
+</section>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </body>
-
-
- </html>
+</html>
