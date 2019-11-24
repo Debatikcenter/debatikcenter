@@ -16,10 +16,15 @@
 <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
 
      <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
-	   <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	   <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
       <script src="../js/jquery-1.10.2.js"></script>
+	    <script>
+$(function(){
+  $("#nav-placeholder").load("header.html");
+});
+</script>
       <style type="text/css">
       * { margin: 0; padding: 0; }
        html, body {height:100%; margin:0; padding:0;}
@@ -111,11 +116,7 @@ text-align: center;
 </head>
 <body>
   <div id="nav-placeholder" ></div>
-<script>
-$(function(){
-  $("#nav-placeholder").load("header.html");
-});
-</script>
+
 <!--
 <div id="backgound_image"><img alt="DebatikCenter homepage image" src='https://debatikcenter.net/assets/homepage_background.jpg' width="100%" height="auto" ></div>
 --> <div id="slideshow">
