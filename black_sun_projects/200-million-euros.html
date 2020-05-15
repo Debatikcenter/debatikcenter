@@ -35,10 +35,14 @@ note: keywords doesn't improve much SEO for websites -->
 
     #logo {margin-top: 10px;
     }
-    section{
+    section, .text{
       background-color: #f3f3f3;
     }
-
+.text {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 24px;
+}
   .mySlides {
     width:82%;
     padding-left: 9%;
@@ -50,7 +54,7 @@ note: keywords doesn't improve much SEO for websites -->
     max-width: 78%;
     position: relative;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 60px;
 
 
   }
@@ -82,9 +86,7 @@ note: keywords doesn't improve much SEO for websites -->
     background-color: rgba(0,0,0,0.8);
   }
   /* Caption text */
-  .text{
-    color:#f2f2f2;
-  }
+
   .section_2{
     padding-top: 10%;
     padding-left: 18%;
@@ -101,6 +103,8 @@ note: keywords doesn't improve much SEO for websites -->
   }
   figcaption {
     padding-top:30px;
+    padding-left: 0;
+    padding-right: 0;
   }
   /* The dots/bullets/indicators */
   .dot {
@@ -162,11 +166,15 @@ note: keywords doesn't improve much SEO for websites -->
   padding-left: 8%;
 }
 .section_2{
-  padding-left: 8%;
-width: 84%;
+padding-left: 0;
+width: 100%;
 }
 .parallax{
   min-height: 500px;
+}
+.text{
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 
@@ -202,8 +210,15 @@ $(function(){
 </script>
 <section>
 <div class="section_2"><img src='../assets/teatri-kombetar/national-theatre-of-albania.gif' alt="200 million euro for new theatre Albania" width="100%" height="auto">
-  <figcaption>Pleurad Xhafa, <em>200 Million Euros, 2020, Permanent Installation, National Theatre of Albania</em></figcaption>
- </div></section>
+  <!-- <figcaption style="padding-left:10px;">Pleurad Xhafa, <em>200 Million Euros, 2020, Permanent Installation, National Theatre of Albania</em></figcaption> -->
+ </div>
+</section>
+<div class="text">
+<p class="title">Pleurad Xhafa, <em>200 Million Euros, 2020, Permanent Installation, National Theatre of Albania</em></p>
+<br>
+
+
+</div>
 
 
 <section class="parallax" style="padding-bottom:30px; background-color:#f3f3f3;">
