@@ -57,35 +57,14 @@ ol li {
   }
 }
 
-.grid {
-  display: grid;
-  grid-gap: 50px 17%; /* 50 pixels of space added between rows and 17% added between columns  */
-/*  justify-content: center;*/
+.image-link{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 1em;
+/**    height: auto; **/
 }
-
-@media only screen and (min-width: 800px) {
-  .grid {
-    grid-template-columns: repeat(3,20%);  /* 3 columns */
-    grid-template-rows: repeat(3,20%); /* 3 rows  */
-  }
-}
-@media only screen and (max-width: 800px) {
-  .grid {
-    justify-content: center;
-  }
-}
-
-.grid-item{
-  border:thin gray solid;
-  padding:10px;
-  text-align: center;
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-*/
-}
-
 	    </style>
 
      <script src="../js/jquery-1.10.2.js"></script>
@@ -112,16 +91,21 @@ $(function(){
         <p class="paragraphs">MANIFESTO has seen the great spectacle of disaster, conflagration, and decomposition: it is the spectacle that we are all now living. To dismantle this spectacle, we proclaim the need to climb inside the sweltering and fetid cockpit of its cultural apparatus, and aim it straight for the ground. We proclaim the need for HIJACKING.</p>
 
         <p class="paragraphs">Every spectator is a plotter – yes, and every spectator is a hijacker. MANIFESTO is the name for a spontaneous sneaking into the logics and the architectures of corruption, of neocolonialism, of artwashing. Hijacking won’t wash out. This hijacking catches the oligarchy in the nets of the horizon, like fish. We are seizing the mills of its empty skulls. We’re all alike, we’re with you, and we are wearing the stains of this art, this society – but tomorrow you won’t recognize us.</p>
-     <div class="grid" style="padding-top: 6%;">
-      <a href='/manifesto/press_conference.html'><div class="grid-item"><p><span style="color: gray">/</span>THE PRESS CONFERENCE</div></a>
+<!--      <a href='/manifesto/press_conference.html'><div class="grid-item"><p><span style="color: gray">/</span>THE PRESS CONFERENCE</div></a>
       <a href='/manifesto/the_house_that_woodrow_built.html'><div class="grid-item"><p><span style="color: gray">/</span>THE HOUSE THAT WOODROW BUILT</p></div></a>
       <a href='/manifesto/the_contemporary_gap.html'><div class="grid-item"><p><span style="color: gray">/</span>THE CONTEMPORARY GAP</p></div></a>
       <a href='/manifesto/biblioteka_art_politike.html'><div class="grid-item"><p><span style="color: gray">/</span>BIBLIOTEKA ART & POLITIKE</p></div></a>
       <a href='/manifesto/surveillance/index.html'><div class="grid-item"><p><span style="color: gray">/</span>SURVEILLANCE</p></div></a>
       <a href='/manifesto/internet_war.html'><div class="grid-item"><p><span style="color: gray">/</span>INTERNET WAR</p></div></a>
+-->
+      <a href='/manifesto/press_conference.html'><img class="image-link" src="/assets/the_press_conference.png"></a><br>
+      <a href='/manifesto/the_house_that_woodrow_built.html'><img class="image-link" src="/assets/the_house_that_woodrow_build.png"></a><br>
+      <a href='/manifesto/the_contemporary_gap.html'><img class="image-link" src="/assets/the_contemporary_gap.png"></a><br>
+      <a href='/manifesto/biblioteka_art_politike.html'><img class="image-link" src="/assets/bibloteka_art_politike.png"></a><br>
+      <a href='/manifesto/surveillance/index.html'><img class="image-link" src="/assets/surveillance.png"></a><br>
+      <a href='/manifesto/internet_war.html'><img class="image-link" src="/assets/internet_war.png"></a>
 
-      <!--      <div class="grid-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76301/01.png"></div>
-      <div class="grid-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76301/01.png"></div>
+      <!--<div class="grid-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76301/01.png"></div>
       <div class="grid-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76301/01.png"></div>
       <div class="grid-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76301/01.png"></div>
       <a href='/manifesto/surveillance.html'><div class="grid-item"><p>Surveillance</p></div></a>
