@@ -58,6 +58,30 @@ ol li {
     padding-right: 2px;
   }
 }
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1599px) {
+    .container {
+        display: none !important;
+    }
+}
+
 	    </style>
 
      <script src="/js/jquery-1.10.2.js"></script>
@@ -83,6 +107,12 @@ $(function(){
         <p class="paragraphs">by Vincent W.J. van Gerven Oei<br>Programing by Grigor Malo and Sidorela Uku.</p>
 
         <p class="paragraphs">Relational Aesthetics graphs out the political, cultural, and business relationships of Albanian Prime Minister Edi Rama since the fall of the communist dictatorship in 1991. Currently updated until 2016, this graph shows the development of the variety of political and cultural projects that emerged throughout Rama's rise to power, as well as the key figures – architects, artists, curators, bureaucrats, politicians, and businessmen – who have facilitated the branding and rebranding of his particular blend of authoritarian politics and state-art practices.</p>
+	<div class="container">
+	  <iframe class="responsive-iframe" src="https://debatikcenter.github.io/er-info/index.html"></iframe>
+	</div> 
+        <p class="paragraphs" style="padding-top: 10px;">
+          <a href="https://debatikcenter.github.io/er-info/" target="_blank">Open project in new tab</a>     
+        </p>
 <!--
         <p class="paragraphs">
           <b>/ THE VIOLENT CURATOR</b><br>
