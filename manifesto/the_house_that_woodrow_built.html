@@ -58,6 +58,88 @@ ol li {
     padding-right: 2px;
   }
 }
+/*slideshow */
+.mySlides {display: none}
+.mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover, .dot2:hover {
+    background-color: #717171;
+}
+.dot2 {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+     
 	    </style>
 
      <script src="/js/jquery-1.10.2.js"></script>
@@ -82,6 +164,7 @@ $(function(){
 	<br>
         <p class="paragraphs">
           An exhibition by La Société Spectrale<br>
+	  (Armando Lulaj, Jonida Gashi, Pleurad Xhafa)<br>
           Curated by Vincent W.J. van Gerven Oei<br><br>
         </p>
         <p class="paragraphs" style="text-align: end;">
@@ -104,17 +187,364 @@ $(function(){
           ­– Vincent W.J. van Gerven Oei<br>
            In Memoriam W. (1956–2022)<br><br>
         </p>
+<section>
+            <div class="slideshow-container">
 
-	<p class="paragraphs">
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/1_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/2_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/3_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/4_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/5_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/6_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/7_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/8_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/9_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/10_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/11_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/12_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/13_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/14_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/15_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/16_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/17_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/18_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/19_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/20_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/21_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/22_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/23_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/24_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/25_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/26_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/27_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/28_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/29_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/30_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/31_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/32_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/33_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/34_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/35_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/manifesto_houseofwoodrow/36_La Société Spectrale_The_House_That_Woodrow_Built_copyright_Armando_Lulaj.jpg"  style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  &nbsp;
+    <div class="text">
+    <p class="paragraphs">La Société Spectrale, <i>The House That Woodrow Built (SHTËPIA E VERDHË, TEATRI, AMBASADA)</i>, 2020-22</p>
+    </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+      <span class="dot" onclick="currentSlide(14)"></span>
+      <span class="dot" onclick="currentSlide(15)"></span>
+      <span class="dot" onclick="currentSlide(16)"></span>
+      <span class="dot" onclick="currentSlide(17)"></span>
+      <span class="dot" onclick="currentSlide(18)"></span>
+      <span class="dot" onclick="currentSlide(19)"></span>
+      <span class="dot" onclick="currentSlide(20)"></span>
+      <span class="dot" onclick="currentSlide(21)"></span>
+      <span class="dot" onclick="currentSlide(22)"></span>
+      <span class="dot" onclick="currentSlide(23)"></span>
+      <span class="dot" onclick="currentSlide(24)"></span>
+      <span class="dot" onclick="currentSlide(25)"></span>
+      <span class="dot" onclick="currentSlide(26)"></span>
+      <span class="dot" onclick="currentSlide(27)"></span>
+      <span class="dot" onclick="currentSlide(28)"></span>
+      <span class="dot" onclick="currentSlide(29)"></span>
+      <span class="dot" onclick="currentSlide(30)"></span>
+      <span class="dot" onclick="currentSlide(31)"></span>
+      <span class="dot" onclick="currentSlide(32)"></span>
+      <span class="dot" onclick="currentSlide(33)"></span>
+      <span class="dot" onclick="currentSlide(34)"></span>
+      <span class="dot" onclick="currentSlide(35)"></span>
+      <span class="dot" onclick="currentSlide(36)"></span>
+
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</section>
+<br><br><br><br>
+<section>
+            <div class="slideshow-container">
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/1_TEATRI_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/2_TEATRI_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png"  style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/3_TEATRI_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_1_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_2_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_3_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_4_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_5_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_6_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_7_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_8_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_9_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_10_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="/assets/manifesto_houseofwoodrow/AMBASADA_11_La Société Spectrale_Armando_Lulaj_Jora_Kasapi.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+  &nbsp;
+    <div class="text">
+    <p class="paragraphs">La Société Spectrale, <i>SKEDAR / FILES (SHTËPIA E VERDHË, TEATRI, AMBASADA)</i>, 2022<br>Research and Technical Drawings by Jora Kasapi</p>
+    </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide2(1)"></span>
+      <span class="dot2" onclick="currentSlide2(2)"></span>
+      <span class="dot2" onclick="currentSlide2(3)"></span>
+      <span class="dot2" onclick="currentSlide2(4)"></span>
+      <span class="dot2" onclick="currentSlide2(5)"></span>
+      <span class="dot2" onclick="currentSlide2(6)"></span>
+      <span class="dot2" onclick="currentSlide2(7)"></span>
+      <span class="dot2" onclick="currentSlide2(8)"></span>
+      <span class="dot2" onclick="currentSlide2(9)"></span>
+      <span class="dot2" onclick="currentSlide2(10)"></span>
+      <span class="dot2" onclick="currentSlide2(11)"></span>
+      <span class="dot2" onclick="currentSlide2(12)"></span>
+      <span class="dot2" onclick="currentSlide2(13)"></span>
+      <span class="dot2" onclick="currentSlide2(14)"></span>
+
+    </div>
+
+<script>
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active";
+}
+</script>
+<section>
+<!--	<p class="paragraphs">
           <b>La Société Spectrale</b><br>
           (Armando Lulaj, Jonida Gashi, Pleurad Xhafa)<br><br>
 
           <b>SKEDAR / FILES of La Société Spectrale</b><br>
           Researched and Curated by Jora Kasapi
         </p>
+
+-->
 </div>
+
       </div>
 
 <br><br>
+
+
     </body>
 </html>
