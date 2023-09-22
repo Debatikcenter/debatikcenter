@@ -49,7 +49,7 @@ ol li {
 }
 .imagecaption {
     padding-bottom: 4%;
-    font-size: 0.75em;
+    font-size: 0.85em;
 }
 @media screen and (max-width : 760px){
   .content {
@@ -61,6 +61,76 @@ ol li {
     padding-right: 2px;
   }
 }
+/*slideshow */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 	    </style>
 
      <script src="/js/jquery-1.10.2.js"></script>
@@ -88,11 +158,72 @@ $(function(){
         <i>Restored by</i> Sonja Lau<br>
         <i>With</i>: Ilya Repin / Zef Shoshi<br><br>
         </p>
-        <figure><img src="/assets/placeholder.jpg" alt="vizə, Pleurad Xhafa" style="width:100%"><figcaption class="imagecaption">Zef Shoshi, <i>THE DESERTER (after Ilya Repin)</i>, 2023. Painting on canvas, 43.5x33cm. Courtesy of the artist</figcaption></figure>
+        <section>
+
+          <div class="slideshow-container">
+      
+          <div class="mySlides fade">
+            <img src="/assets/eden1/Zef_Shoshi_Deserter_Eden_1DebatikCenter_of_Contemporary_Art_Copyright_1.jpg" alt="Zef Shoshi, THE DESERTER" style="width:100%">
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="/assets/eden1/Zef_Shoshi_Deserter_Eden_1DebatikCenter_of_Contemporary_Art_Copyright_2.jpg" alt="Zef Shoshi, THE DESERTER" style="width:100%">
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="/assets/eden1/Zef_Shoshi_Deserter_Eden_1DebatikCenter_of_Contemporary_Art_Copyright_3.jpg" alt="Zef Shoshi, THE DESERTER" style="width:100%">
+          </div>      
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          &nbsp;
+
+          <div class="text">
+          <p class="imagecaption">Zef Shoshi, THE DESERTER (after Ilya Repin), 2023. Painting on canvas, 43.5x33cm. Courtesy of the artist</p>
+          </div>
+          <br>
+      
+        </section>
+        
         <p class="paragraphs"><i>THE DESERTER</i> is a performative reading and micro exhibition that takes its cue from the art institutional histories in Tirana, Albania, and the current closure of the National Gallery due to renovation works. The 'empty institution' will serve as a starting point to consider the desertion of art history as a symptomatic condition of the region, and it does so with the aid of the infamous painting “The Deserter” (1917) by Ilya Repin, here in form of a painterly reproduction by the artist Zef Shoshi (*1939 in Tirana), commissioned especially for Manifesto DESERTION. The performative reading thus sets the ground for a reflection on absences and presences, originals and copies, anachronisms and speculative histories, however all directed at its specific gravitational center - the figure of “The Deserter”, the one who remains absent, the one who is hiding, the one who deserted from the story as we know it.</p>
-</div>
+
+      </div>
       </div>
 
 <br><br>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
     </body>
 </html>
