@@ -49,7 +49,7 @@ ol li {
 }
 .imagecaption {
     padding-bottom: 4%;
-    font-size: 0.75em;
+    font-size: 0.85em;
 }
 @media screen and (max-width : 760px){
   .content {
@@ -61,6 +61,76 @@ ol li {
     padding-right: 2px;
   }
 }
+/*slideshow */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 	    </style>
 
      <script src="/js/jquery-1.10.2.js"></script>
@@ -87,11 +157,88 @@ $(function(){
           <i>Happening by</i> Pleurad Xhafa<br>
           July 4, 2023<br><br>
         </p>
-        <figure><img src="/assets/placeholder.jpg" alt="vizə, Pleurad Xhafa" style="width:100%"><figcaption class="imagecaption">Pleurad Xhafa, <i>TONGUE</i>, 2023. Sculpture, 13 x 10cm. Dritan Zagani’s tongue, taken at his apartment on the outskirts of Basel, March 26, 2023. Courtesy of the DebatikCenter of Contemporary Art and Zeta Contemporary Art Center</figcaption></figure>
+        <section>
+
+          <div class="slideshow-container">
+      
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/1.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/2.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+      
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/3.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/4.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/5.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="/assets/manifesto_happening/6.jpg" alt="vizə, Pleurad Xhafa" style="width:100%">
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+          &nbsp;
+
+          <div class="text">
+          <p class="imagecaption">Pleurad Xhafa, <i>TONGUE</i>, 2023. Sculpture, 13 x 10cm. Dritan Zagani’s tongue, taken at his apartment on the outskirts of Basel, March 26, 2023. Courtesy of the DebatikCenter of Contemporary Art and Zeta Contemporary Art Center</p>
+          </div>
+          <br>
+      
+        </section>
+        
         <p class="paragraphs"><i>FIND YOUR TONGUE</i> is an invitation to the visitor, offering them to drink water from ice glasses shaped like the tongue of the former anti-drug chief Dritan Zagani. In 2017, while still on duty, Zagani investigated an Albanian organized criminal group that cooperated with the government. As a result, the former Minister of the Interior of the Socialist Party, Sajmir Tahiri, was convicted. As a result, today, Tahiri is serving his sentence at his habitation, after having been previously imprisoned. Zagani was and still is persecuted by the Albanian government because according to the government, in this matter, he was the one who had to be convicted. While still continuing to be wanted by the Albanian justice Zagani received political asylum in Switzerland. Nowadays he lives under a new identity, carrying out various jobs, among others as a security guard at Art Basel.</p>
-</div>
+      </div>
       </div>
 
 <br><br>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
     </body>
 </html>
